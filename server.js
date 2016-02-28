@@ -11,7 +11,7 @@ app.set("port", (process.env.PORT || 9000));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-MongoClient.connect("mongodb://localhost:27017/search", function (err, db) {
+MongoClient.connect("mongodb://db:12345@ds019048.mlab.com:19048/search", function (err, db) {
 
     if (err) {
 

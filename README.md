@@ -17,14 +17,14 @@
 
 - Search image by passing the image name to the end of this url like this:
 
- https://something.heroku.com/api/imagesearch/imagenamehere
+https://sleepy-fjord-42191.herokuapp.com/api/imagesearch/imagenamehere
 
 ### Get Most Recent Search
 
-https://something.heroku.com/api/latest/imagesearch/
+https://sleepy-fjord-42191.herokuapp.com/api/latest/imagesearch/
 
 ### Paginate Through The Search Response
 
 - You can paginate through the search response by adding ?offset=any number to the end of the image name like this:
 
-https://something.heroku.com/api/imagesearch/imagenamehere?offset=2
+https://sleepy-fjord-42191.herokuapp.com/api/imagesearch/imagenamehere?offset=2
