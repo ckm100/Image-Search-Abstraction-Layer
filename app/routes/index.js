@@ -5,13 +5,17 @@ module.exports = function (app, store, db, results) {
 
     app.get("/api/imagesearch/:term", function (req, res) {
 
-        if (typeof parseInt(req.query.offset) === "number") {
+        if (req.query.offset === undefined) {
 
-            search = new Search("dw/DjR4i1/AeaEfMcO9k/xamSqIditU2oIK8yxUSZmc", parseInt(req.query.offset));
+            search = new Search("dw/DjR4i1/AeaEfMcO9k/xamSqIditU2oIK8yxUSZmc");
 
         } else {
 
-            search = new Search("dw/DjR4i1/AeaEfMcO9k/xamSqIditU2oIK8yxUSZmc");
+            if (typeof parseInt(req.query.offset) === "number") {
+
+                search = new Search("dw/DjR4i1/AeaEfMcO9k/xamSqIditU2oIK8yxUSZmc", parseInt(req.query.offset));
+
+            }
 
         }
 
