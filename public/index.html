@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Image Search Abstraction Layer</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <h1>Image Search Abstraction Layer</h1>
+
+    <h3>User Story</h3>
+
+    <ol>
+
+        <li>You can search an image by passing in the image name as a parameter in the url</li>
+
+        <li>The search result is a json response which include the image URLs, alt text and the page urls</li>
+
+        <li>You can paginate through the response by add a ?offset=2 parameter to the URL</li>
+
+        <li>You can get a list of the most recently submitted search strings</li>
+
+    </ol>
+
+    <h3>Example Usage:</h3>
+
+    <h4>Search Image</h4>
+
+    <p>Search image by passing the image name to the end of this url like this:</p>
+
+    <code>https://something.heroku.com/api/imagesearch/imagenamehere</code>
+
+    <h4>Get Most Recent Search</h4>
+
+    <code>https://something.heroku.com/api/latest/imagesearch/</code>
+
+    <h4>Paginate Through The Search Response</h4>
+
+    <p>You can paginate through the search response by adding ?offset=any number to the end of the image name like this:</p>
+
+    <code>https://something.heroku.com/api/imagesearch/imagenamehere?offset=2</code>
+
+</body>
+
+</html>
